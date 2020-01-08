@@ -9,3 +9,11 @@ def view_welcome_page():
 @flask_app.route("/about/")
 def view_about():
     return render_template("about.jinja")
+
+@flask_app.route("/Admin/")
+def view_admin():
+    return render_template("admin.jinja")
+
+@flask_app.route("/Articles/")
+def view_articles():
+    return render_template("articles.jinja")
